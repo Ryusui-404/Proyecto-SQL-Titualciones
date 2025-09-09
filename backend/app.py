@@ -49,7 +49,6 @@ def get_docentes():
     id_facultad = request.args.get('id_facultad')
     conn = get_connection()
     cursor = conn.cursor()
-    # Asocia docentes a una facultad si han participado en proyectos de carreras de esa facultad
     query = """
         SELECT DISTINCT d.Ntrbj, d.Nombre 
         FROM Docentes d
@@ -149,7 +148,6 @@ def add_estudiante():
     conn = get_connection()
     cursor = conn.cursor()
     try:
-        # Insertar en la tabla Estudiantes
         generacion = f"{data['anio_ingreso']}-{data['anio_egreso']}"
         cursor.execute(
             """
@@ -204,4 +202,5 @@ def delete_estudiante(ncta):
         conn.close()
 
 if __name__ == "__main__":
+
     app.run(debug=True)
