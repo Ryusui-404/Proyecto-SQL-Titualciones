@@ -140,7 +140,6 @@ footer {
     }
 }
 
-/* Estilos para el contenedor de añadir estudiante */
 .add-student-container {
     background-color: white;
     border-radius: 8px;
@@ -176,7 +175,6 @@ footer {
     margin-bottom: 1rem;
 }
 
-/* Estilo para el botón de eliminar */
 .delete-btn {
     background-color: var(--accent-color);
     color: white;
@@ -189,4 +187,5 @@ footer {
 
 .delete-btn:hover {
     background-color: #c0392b;
+
 }
