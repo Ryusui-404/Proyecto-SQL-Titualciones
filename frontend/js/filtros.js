@@ -45,7 +45,6 @@ function resetearFiltros() {
     window.location.reload();
 }
 
-// Lógica para el formulario de añadir estudiante
 async function configurarFormulario() {
     await popularSelector('form-facultad', 'facultades', '-- Seleccione Facultad --');
     await popularSelector('form-modalidad', 'modalidades', '-- Seleccione Modalidad --');
@@ -169,4 +168,5 @@ async function handleAddStudent(event) {
         console.error('Error:', error);
         alert(`No se pudo agregar el estudiante: ${error.message}`);
     }
+
 }
