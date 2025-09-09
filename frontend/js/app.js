@@ -4,12 +4,10 @@ let chartModalidad, chartYear, chartCarrera, chartMonth;
 const API_BASE_URL = 'http://localhost:5000/api';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Carga inicial y configuración
     configurarFiltros();
     configurarFormulario();
     configurarTablaListener();
 
-    // Cargar datos iniciales
     aplicarFiltros(); 
 
     document.getElementById('apply-filters').addEventListener('click', aplicarFiltros);
@@ -74,4 +72,5 @@ function actualizarEstudiantes(nuevosEstudiantes) {
     estudiantes = nuevosEstudiantes;
     generarGraficas(estudiantes);
     mostrarListaEstudiantes(estudiantes);
+
 }
