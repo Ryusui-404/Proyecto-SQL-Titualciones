@@ -6,6 +6,7 @@ def get_connection():
         "SERVER=DESKTOP-HI6U3GK\SQLEXPRESS;"
         "DATABASE=TitulacionesBDNR;"
         "UID=sa;"
-        "PWD=Ryusui-404"
+        "PWD="
     )
     return conn
+
