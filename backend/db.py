@@ -5,9 +5,10 @@ def get_connection():
         "DRIVER={ODBC Driver 17 for SQL Server};"
         "SERVER=;"
         "DATABASE=TitulacionesBDNR;"
-        "UID=sa;"
+        "UID=;"
         "PWD="
     )
     return conn
+
 
 
